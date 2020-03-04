@@ -1,97 +1,106 @@
-/* body {
-    font-size: 0px;
-} */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-.container {
+.conteiner {
   width: 900px;
   margin: 0 auto;
 }
+/* header */
+header {
+  padding: 76px 0px 102px 0px;
+}
 
 .site-navigation {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  margin-top: 76px;
-  margin-left: 160px;
-}
-
-.site-navigation a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.site-navigation li {
-  display: inline-block;
+  font-size: 0px;
   list-style: none;
-  margin-bottom: -30px;
+  text-align: center;
 }
 
-.section-list-item {
+.nav-list {
   display: inline-block;
-  width: 420px;
-  height: 480px;
-  margin-right: 60px;
-  margin-top: 132px;
+  margin-right: 100px;
 }
 
-.section-list-item:nth-child(2n) {
-  margin-right: 0;
+.nav-list:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .nav-list-link {
+  display: block;
   color: #626262;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .nav-list-link:hover {
   color: #03a9f4;
 }
 
-.nav-list {
-  margin-right: 100px;
-}
+/* main */
 
-.nav-list:last-child {
-  margin-right: 0;
-}
-
-.section-list {
+.ul-section {
   font-size: 0;
-  padding: 0;
-  margin: 0;
+}
+.section-list-item {
+  display: inline-block;
+  list-style: none;
+  display: inline-block;
+  width: 420px;
+  height: auto;
+  margin-right: 60px;
+  padding-bottom: 134px;
 }
 
-.section-list-item p {
-  font-size: 14px;
-  color: #b4ad9e;
+.section-list-item:nth-child(2n) {
+  margin-right: 0px;
 }
-
-.section-list-item h3 {
-  font-size: 30px;
-  color: #626262;
+.section-list-item:nth-child(5) {
+  padding-bottom: 0;
+  margin-bottom: 56px;
+}
+.section-list-item:nth-child(6) {
+  padding-bottom: 0;
+  margin-bottom: 56px;
 }
 
 .main-section-list {
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  font-size: 14px;
+  color: #c8c3b9;
+  margin-top: 30px;
 }
 
 h3 {
-  margin-top: 0px;
-  margin-bottom: 40px;
+  color: #626262;
+  font-size: 30px;
+  margin-top: 30px;
 }
 
 .main-section-list-item {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 38px;
+  font-size: 14px;
+  color: #626262;
+}
+
+div .button {
+  margin: 0 auto;
 }
 
 .button {
-  padding: 0px;
-  margin: 50px 379px 50px 359px;
+  display: block;
   width: 164px;
   height: 60px;
   border: solid 1px #626262;
   background: #fff;
-  text-transform: uppercase;
+  margin: 0 auto;
+}
+.button:hover {
+  border: 1px solid #03a9f4;
+  cursor: pointer;
+  color: #03a9f4;
 }
