@@ -190,6 +190,6 @@ h2:after {
   text-align: center;
   padding-top: 17px;
 }
-button:hover {
+.button:hover {
   background-color: #f74574;
 }
