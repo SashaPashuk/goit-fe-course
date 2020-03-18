@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* header */
+.page-nav {
+  padding: 38px 0px 32px 0px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.site-navigation {
+  width: 500px;
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-navigation li {
+  margin-top: 3px;
+  float: left;
+  list-style: none;
+  margin-right: 35px;
+}
+.site-navigation li:nth-child(6) {
+  margin-right: 0;
+}
+.site-navigation a {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: #0f0101;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.site-navigation a:hover {
+  color: #1abc9c;
+}
+
+/* Main-slider */
+
+.main-section-slider {
+  position: relative;
+  height: 600px;
+}
+
+.main-section-slider-backgaund {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  display: block;
+  width: 100%;
+  height: 600px;
+  background-color: #000;
+}
+
+.main-section-slider-box {
+  position: absolute;
+  top: 218px;
+  left: 125px;
+  height: 112px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.main-section-slider-box h2 {
+  position: absolute;
+  top: 0;
+  left: 180px;
+  font-size: 60px;
+  line-height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+
+.main-section-slider-box p {
+  position: absolute;
+  top: 80px;
+  left: 188px;
+  font-size: 24px;
+  line-height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.button-slider-left {
+  border: none;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 104px;
+  height: 104px;
+  background-color: #1abc9c;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.button-slider-left span {
+  font-size: 38px;
+  color: #fff;
+}
+.button-slider-left:hover {
+  background-color: #1abc9c;
+  opacity: 1;
+}
+
+.button-slider-right {
+  border: none;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 104px;
+  height: 104px;
+  background-color: #1abc9c;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.button-slider-right span {
+  font-size: 38px;
+  color: #fff;
+}
+.button-slider-right:hover {
+  background-color: #1abc9c;
+  opacity: 1;
+}
+
+/* Main-colection */
+
+.main-section-products {
+  background-color: #e9f0fd;
+}
+
+.main-section-products h2 {
+  font-size: 48px;
+  font-family: "Roboto" sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #515151;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 80px;
+}
+
+.main-section-products h2:after {
+  display: block;
+  content: "";
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.main-section-products figure {
+  position: relative;
+  float: left;
+  width: 255px;
+  height: auto;
+  margin-right: 30px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+.main-section-products figure:nth-last-child(1) {
+  margin-right: 0;
+}
+
+ .wrapper-hover {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   width: 235px;
+   height: 262px;
+   background-color: #000;
+   opacity: 1;
+ }
+
+/* .main-section-products figure(HOVER) */
+.main-section-products figure:hover h3 {
+  background-color: #1abc9c;
+}
+.main-section-products figure:hover p {
+  background-color: #7fd9c7;
+}
+/* .main-section-products figure(HOVER) */
+
+
+.main-section-products figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 14px;
+  width: 255px;
+  height: 40px;
+  background-color: #323232;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.main-section-products h3 {
+  width: 201px;
+  height: 40px;
+  padding-top: 13px;
+  padding-left: 13px;
+  float: left;
+}
+
+.main-section-products  p {
+  width: 54px;
+  height: 40px;
+  padding: 13px 14px 13px 14px;
+  float: right;
+  background-color: #8c8c8c;
+}
+
+/* footer */
+
+.footer-box {
+  background-color: #323232;
+  width: 100%;
+  height: 88px;
+}
+
+.footer-box p {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 39px;
+  color: #fff;
+}
+.footer-box span {
+  color: #46bfa9;
+}
