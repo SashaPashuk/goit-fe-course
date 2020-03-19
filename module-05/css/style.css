@@ -196,15 +196,71 @@ body {
   margin-right: 0;
 }
 
- .wrapper-hover {
-   position: absolute;
-   top: 10px;
-   left: 10px;
-   width: 235px;
-   height: 262px;
-   background-color: #000;
-   opacity: 1;
- }
+/* HOVER */
+.wrapper-hover {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 235px;
+  height: 262px;
+  background-color: #000;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.inner-hover-icon {
+  margin-top: 79px;
+  margin-left: 35px;
+  width: 166px;
+  height: 107px;
+}
+
+.inner-hover-icon div {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: solid 1px #fff;
+  margin-right: 8px;
+  margin-bottom: 7px;
+  float: left;
+}
+.inner-hover-icon div:nth-child(1) {
+  background-image: url(../img/collection/icon/icon1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inner-hover-icon div:nth-child(2) {
+  background-image: url(../img/collection/icon/icon2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inner-hover-icon div:nth-child(3) {
+  background-image: url(../img/collection/icon/icon3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0;
+}
+.inner-hover-icon div:nth-child(4) {
+  width: 166px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 3.5;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  background-color: #323232;
+}
+.icon-inner-box {
+  float: left;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/collection/icon/icon4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /* .main-section-products figure(HOVER) */
 .main-section-products figure:hover h3 {
@@ -213,8 +269,19 @@ body {
 .main-section-products figure:hover p {
   background-color: #7fd9c7;
 }
-/* .main-section-products figure(HOVER) */
 
+figure:hover .wrapper-hover {
+  visibility: visible;
+}
+
+.icon:hover {
+  background-color: #1abc9c;
+  border: none;
+}
+.icon:nth-child(4):hover {
+  color: #219f85;
+  background-color: #323232;
+}
 
 .main-section-products figcaption {
   position: absolute;
@@ -236,7 +303,7 @@ body {
   float: left;
 }
 
-.main-section-products  p {
+.main-section-products p {
   width: 54px;
   height: 40px;
   padding: 13px 14px 13px 14px;
@@ -255,7 +322,7 @@ body {
 .footer-box p {
   text-align: center;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding-top: 39px;
   color: #fff;
 }
