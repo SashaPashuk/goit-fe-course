@@ -22,7 +22,6 @@ body {
   display: table;
 }
 
-
 /* header */
 .page-nav {
   padding: 27px 0px 26px 0px;
@@ -42,10 +41,10 @@ body {
   padding: 0;
   margin: 0;
 }
- .logo::first-letter {
-   font-weight: 900;
-   color: #1abc9c;
- }
+.logo::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
 
 .site-navigation {
   float: right;
@@ -101,6 +100,10 @@ body {
   height: 112px;
   margin: 0 auto;
   color: #fff;
+}
+
+.main-section-slider-box ul {
+  list-style: none;
 }
 
 .main-section-slider-box h2 {
@@ -179,7 +182,7 @@ body {
   color: #515151;
   text-align: center;
   margin-bottom: 80px;
-  line-height: .75;
+  line-height: 0.75;
 }
 
 .main-section-products h2:after {
@@ -221,36 +224,41 @@ body {
   margin-left: 35px;
   width: 166px;
   height: 107px;
+  list-style: none;
 }
-
-.inner-hover-icon div {
+.icon-box {
+  float: left;
+}
+.icon {
   display: block;
   width: 50px;
   height: 50px;
   border: solid 1px #fff;
+  background-color: rgba(0, 0, 0, 0);
   margin-right: 8px;
   margin-bottom: 7px;
-  float: left;
 }
-.inner-hover-icon div:nth-child(1) {
+.inner-hover-icon li:nth-child(1) .icon {
   background-image: url(../img/collection/icon/icon1.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.inner-hover-icon div:nth-child(2) {
+.inner-hover-icon li:nth-child(2) .icon {
   background-image: url(../img/collection/icon/icon2.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.inner-hover-icon div:nth-child(3) {
+.inner-hover-icon li:nth-child(3) .icon {
   background-image: url(../img/collection/icon/icon3.png);
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 0;
+  margin-right: 0px;
 }
-.inner-hover-icon div:nth-child(4) {
+.inner-hover-icon li:nth-child(4) button {
   width: 166px;
-  margin: 0;
+  height: 50px;
+  margin-right: 0;
+  margin-bottom: 0;
   color: #fff;
   text-align: center;
   line-height: 3.5;
@@ -259,15 +267,16 @@ body {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   background-color: #323232;
+  border: solid 1px #fff;
 }
-.icon-inner-box {
-  float: left;
+.icon4 {
   display: block;
-  width: 50px;
-  height: 50px;
+  float: left;
   background-image: url(../img/collection/icon/icon4.png);
   background-repeat: no-repeat;
   background-position: center;
+  width: 50px;
+  height: 50px;
 }
 
 /* .main-section-products figure(HOVER) */
@@ -285,10 +294,13 @@ figure:hover .wrapper-hover {
 .icon:hover {
   background-color: #1abc9c;
   border: none;
+  cursor: pointer;
 }
-.icon:nth-child(4):hover {
+.inner-hover-icon li:nth-child(4):hover button {
   color: #219f85;
   background-color: #323232;
+  cursor: pointer;
+  border: none;
 }
 
 .main-section-products figcaption {
