@@ -22,25 +22,34 @@ body {
   display: table;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 /* header */
 .page-nav {
-  padding: 38px 0px 32px 0px;
+  padding: 27px 0px 26px 0px;
+}
+
+.site-logo {
+  text-decoration: none;
+  color: #555252;
 }
 
 .logo {
   display: inline-block;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
 }
+ .logo::first-letter {
+   font-weight: 900;
+   color: #1abc9c;
+ }
 
 .site-navigation {
-  width: 500px;
   float: right;
-  padding: 0;
+  padding: 8px 0px 10px 0px;
   margin: 0;
   list-style: none;
 }
@@ -117,6 +126,9 @@ body {
 }
 
 .button-slider-left {
+  background-image: url(../img/slider/button/button-left.png);
+  background-position: center;
+  background-repeat: no-repeat;
   border: none;
   position: absolute;
   top: 8px;
@@ -127,16 +139,15 @@ body {
   opacity: 0.4;
   cursor: pointer;
 }
-.button-slider-left span {
-  font-size: 38px;
-  color: #fff;
-}
 .button-slider-left:hover {
   background-color: #1abc9c;
   opacity: 1;
 }
 
 .button-slider-right {
+  background-image: url(../img/slider/button/button-right.png);
+  background-position: center;
+  background-repeat: no-repeat;
   border: none;
   position: absolute;
   top: 8px;
@@ -147,10 +158,6 @@ body {
   opacity: 0.4;
   cursor: pointer;
 }
-.button-slider-right span {
-  font-size: 38px;
-  color: #fff;
-}
 .button-slider-right:hover {
   background-color: #1abc9c;
   opacity: 1;
@@ -159,7 +166,9 @@ body {
 /* Main-colection */
 
 .main-section-products {
+  padding-top: 100px;
   background-color: #e9f0fd;
+  padding-bottom: 100px;
 }
 
 .main-section-products h2 {
@@ -169,8 +178,8 @@ body {
   font-weight: 900;
   color: #515151;
   text-align: center;
-  padding-top: 100px;
   margin-bottom: 80px;
+  line-height: .75;
 }
 
 .main-section-products h2:after {
@@ -189,7 +198,6 @@ body {
   width: 255px;
   height: auto;
   margin-right: 30px;
-  margin-bottom: 100px;
   cursor: pointer;
 }
 .main-section-products figure:nth-last-child(1) {
@@ -310,7 +318,6 @@ figure:hover .wrapper-hover {
   float: right;
   background-color: #8c8c8c;
 }
-
 /* footer */
 
 .footer-box {
