@@ -231,14 +231,16 @@
 }
 
 .social-icon-item {
-  display: block;
-  width: 55px;
-  height: 55px;
   margin-right: 1px;
   background-color: #fce38a;
   background-repeat: no-repeat;
   background-position: center;
   transition: background-color 200ms linear;
+}
+.social-icon-item a{
+  display: block;
+  width: 55px;
+  height: 55px; 
 }
 .social-icon-item:hover {
   transition: background-color 200ms linear;
