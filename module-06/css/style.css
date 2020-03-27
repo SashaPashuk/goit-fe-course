@@ -14,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 125px;
 }
 
 .site-logo {
@@ -56,6 +55,9 @@
 }
 
 /* MAIN */
+.services-box {
+  padding-top: 125px;
+}
 .section-title span {
   display: block;
   font-family: "Kaushan Script", cursive;
