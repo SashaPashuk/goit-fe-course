@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: "Wisdom Script";
-  src: url(../fonts/Wisdom\Script\AJ.otf);
+  src: url(../fonts/OleoScript-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -45,10 +45,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 128px;
+  padding-bottom: 128px;
+  padding-top: 50px;
 }
 
 .site-logo {
+  display: block;
   font-family: "Wisdom Script";
   text-decoration: none;
   color: #fed136;
@@ -64,6 +66,7 @@
 }
 
 .nav-item {
+  display: block;
   color: #222222;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -100,12 +103,10 @@
 
 .services-list {
   list-style: none;
-  min-height: 218px;
   display: flex;
   justify-content: space-between;
 }
 .services-list-item {
-  min-height: 125px;
   width: 290px;
 }
 .services-list-item h3 {
@@ -113,7 +114,6 @@
   font-family: "Montserrat_bold", sans-serif;
   text-align: center;
   position: relative;
-  padding-top: 16px;
   padding-bottom: 14px;
 }
 .services-list-item h3:before {
@@ -141,15 +141,11 @@
   color: #777777;
   font-style: 14px;
   font-family: "RobotoSlab";
-  padding-bottom: 20px;
 }
 
 /* main-contact_us-box */
 .contact_us-section {
   background-color: #282828;
-}
-
-.contact_us-box {
   min-height: 675px;
   background-color: #222222;
   background-image: url(../img/Map-Image.png);
