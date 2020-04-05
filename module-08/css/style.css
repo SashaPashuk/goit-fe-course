@@ -13,7 +13,7 @@ a {
 
 /* HEADER */
 .page-header {
-  min-height: 540px;
+  height: 540px;
   background-image: url(../img/backgraund-photo.jpg);
   background-position: center;
   font-family: "Montserrat_bold";
@@ -30,27 +30,23 @@ a {
 }
 
 .nav-list {
+  list-style: none;
   display: flex;
   justify-content: center;
 }
 
 .nav-list-item {
+  padding: 8px;
+  display: block;
   font-size: 14px;
+  font-family: "Montserrat_bold";
+  color: #ffffff;
   width: 90px;
   height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 .nav-list-item:hover {
   border: 3px solid #ffffff;
   border-radius: 20px;
-}
-
-.nav-list-item a {
-  font-family: "Montserrat_bold";
-  color: #ffffff;
 }
 
 .site-logo a {
@@ -79,7 +75,7 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  width: 280px;
+  width: 225px;
   height: 40px;
   background-color: #ff4e50;
   border-radius: 20px;
@@ -88,7 +84,7 @@ a {
 
 /* MAIN */
 .partner {
-  width: 80%;
+  width: 280px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 30px;
@@ -106,6 +102,8 @@ a {
 }
 .partner-list-item {
   margin-bottom: 30px;
+  width: 240px;
+  margin: 0 auto;
   /* cursor: pointer; */
 }
 .partner-list-item:nth-last-child(1) {
