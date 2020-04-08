@@ -1,5 +1,5 @@
 /* HEADER */
-@media (min-width: 559px) and (max-width: 939px) {
+@media (min-width: 659px) and (max-width: 939px) {
   .container {
     width: 640px;
   }
@@ -55,11 +55,8 @@
   .partner-list-item {
     margin-bottom: 55px;
   }
-  .partner-list-item:nth-last-child(1) {
-    margin-bottom: 0;
-  }
-  .partner-list-item:nth-last-child(2) {
-    margin-bottom: 0;
+  .partner-list-item:nth-last-child(-n+2) {
+    margin-bottom: 38;
   }
 }
 
@@ -106,6 +103,7 @@
 
   .partner-list-item {
     width: 220px;
+    margin-bottom: 38px;
   }
 
   .partner-list {

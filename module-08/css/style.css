@@ -16,7 +16,8 @@ a {
   height: 540px;
   background-image: url(../img/backgraund-photo.jpg);
   background-position: center;
-  font-family: "Montserrat_bold";
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   color: #ffffff;
   text-align: center;
 }
@@ -39,7 +40,8 @@ a {
   padding: 8px;
   display: block;
   font-size: 14px;
-  font-family: "Montserrat_bold";
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   color: #ffffff;
   width: 90px;
   height: 36px;
@@ -61,14 +63,16 @@ a {
   font-size: 30px;
   padding-top: 20px;
   text-transform: uppercase;
-  font-family: "Montserrat_bold";
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .header-susbtitle {
   width: 230px;
   margin: 0 auto;
   font-size: 18px;
-  font-family: "RobotoLight";
+  font-family: "Roboto";
+  font-weight: 300;
   margin: 20px auto;
 }
 .partner-button {
@@ -93,7 +97,8 @@ a {
   margin-bottom: 57px;
 }
 .partner-title {
-  font-family: "Montserrat_bold";
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   color: #333333;
   font-size: 22px;
   margin-bottom: 20px;
@@ -103,13 +108,13 @@ a {
   list-style: none;
 }
 .partner-list-item {
-  margin-bottom: 30px;
   width: 240px;
   margin: 0 auto;
+  margin-bottom: 27px;
   /* cursor: pointer; */
 }
 .partner-list-item:nth-last-child(1) {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 /* .partner-list-item:hover {
     padding: 10px 0;
@@ -122,6 +127,7 @@ a {
   width: 122px;
   height: 122px;
   position: relative;
+  margin-bottom: 20px;
 }
 .photo-box img {
   border-radius: 50%;
@@ -157,11 +163,12 @@ a {
 }
 
 .partner-list-item h3 {
-  padding: 20px 0;
+  margin-bottom: 20px;
   color: #7d7d7d;
 }
 .partner-list-item p {
-  font-family: "RobotoLight";
+  font-family: "Roboto";
+  font-weight: 300;
   font-size: 14px;
   color: #7d7d7d;
 }
@@ -176,6 +183,9 @@ button {
   margin: 0 auto;
   font-size: 14px;
   color: #ff8a8c;
-  margin-top: 30px;
   cursor: pointer;
+}
+button:hover {
+  box-shadow: 1px 1px 2px 3px #ff4e50;
+  background-color: #1cd7ad;
 }
