@@ -1,7 +1,7 @@
 /* HEADER */
 @media (min-width: 768px) and (max-width: 940px) {
   .container {
-    width: 640px;
+    width: 660px;
   }
 
   .page-header {
@@ -47,7 +47,7 @@
   .partner {
     padding-top: 70px;
     padding-bottom: 40px;
-    width: 490px;
+    width: 660px;
   }
 
   .partner-title {
@@ -107,7 +107,7 @@
 
   /* MAIN */
   .partner {
-    width: 940px;
+    width: 920px;
   }
 
   .partner-list-item {
@@ -118,11 +118,5 @@
   .partner-list {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: 941px) {
-  .container {
-    width: 920px;
   }
 }
