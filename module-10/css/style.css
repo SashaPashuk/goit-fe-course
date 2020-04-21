@@ -127,10 +127,7 @@
 }
 
 /* MAIN */
-.services-box {
-  padding-top: 125px;
-}
-.section-title span {
+.subtitle {
   display: block;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
@@ -139,10 +136,10 @@
   text-transform: lowercase;
   padding-bottom: 10px;
 }
-.section-title span::first-letter {
+.subtitle::first-letter {
   text-transform: uppercase;
 }
-.section-title {
+.title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -151,7 +148,7 @@
   text-transform: uppercase;
   margin-bottom: 110px;
 }
-.section-title:after {
+.title:after {
   display: block;
   content: "";
   width: 60px;
@@ -162,11 +159,12 @@
   margin-top: 40px;
 }
 /* SERVICE */
-.services-box {
+.services {
+  padding-top: 125px;
   margin-bottom: 90px;
 }
 
-.services-list {
+.services__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -175,14 +173,14 @@
   margin: 0 auto;
   min-height: 240px;
 }
-.services-list-item {
+.services__item {
   position: relative;
   max-width: 300px;
   min-height: 70px;
   margin-bottom: 100px;
   margin-left: 80px;
 }
-.services-list-item:before {
+.services__item:before {
   position: absolute;
   top: 0;
   left: -80px;
@@ -194,29 +192,29 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-.services-icon1::before {
+.services__item--icon1::before {
   background-image: url(../img/services/icon1.png);
 }
-.services-icon2::before {
+.services__item--icon2::before {
   background-image: url(../img/services/icon2.png);
 }
-.services-icon3::before {
+.services__item--icon3::before {
   background-image: url(../img/services/icon3.png);
 }
-.services-icon4::before {
+.services__item--icon4::before {
   background-image: url(../img/services/icon4.png);
 }
-.services-icon5::before {
+.services__item--icon5::before {
   background-image: url(../img/services/icon5.png);
 }
-.services-icon6::before {
+.services__item--icon6::before {
   background-image: url(../img/services/icon6.png);
 }
 
-.services-list-item:nth-child(n + 3) {
+.services__item:nth-child(n + 3) {
   margin-bottom: 0;
 }
-.services-list-item h3 {
+.services__title {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -226,7 +224,7 @@
   color: #333333;
 }
 
-.services-list-item p {
+.services__text {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -237,7 +235,7 @@
 .team {
   padding-bottom: 80px;
 }
-.team .text {
+.team__text {
   width: 980px;
   margin: 0 auto;
   font-size: 15px;
@@ -249,13 +247,14 @@
   margin-bottom: 90px;
 }
 
-.team-list {
+.team__list {
   min-height: 545px;
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
-.box-hover {
+
+.team__box-hover {
   position: relative;
   margin-bottom: 30px;
   width: 380px;
@@ -263,18 +262,18 @@
   cursor: pointer;
 }
 
-.wrap-hover {
+.team__wrap-hover {
   display: block;
   width: 380px;
   height: 470px;
 }
-.box-hover:hover .wrap-hover {
+.team__box-hover:hover .team__wrap-hover {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 0 #95e1d3;
   transition: box-shadow 0.2s linear, transform 200ms linear;
 }
 
-.inner-hover {
+.team__inner-hover {
   display: block;
   position: absolute;
   top: 0;
@@ -282,7 +281,7 @@
   width: 380px;
   height: 470px;
 }
-.box-hover:hover .inner-hover {
+.team__box-hover:hover .team__inner-hover {
   background: linear-gradient(
     to bottom,
     rgba(243, 129, 129, 0.8),
@@ -291,7 +290,7 @@
   opacity: 1;
 }
 
-.social-list-icon {
+.social__list {
   list-style: none;
   display: flex;
   position: absolute;
@@ -300,18 +299,18 @@
   transform: translate(-50%, -50%);
   visibility: hidden;
 }
-.box-hover:hover .social-list-icon {
+.team__box-hover:hover .social__list {
   visibility: visible;
 }
 
-.social-icon-item {
+.social__item {
   margin-right: 1px;
   background-color: #fce38a;
   background-repeat: no-repeat;
   background-position: center;
   transition: background-color 200ms linear;
 }
-.social-icon-item a {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,22 +318,22 @@
   height: 55px;
 }
 
-.social-icon-item svg {
+.social__link--svg {
   display: block;
   width: 30px;
   height: 30px;
   fill: #f38181;
 }
 
-.social-icon-item:hover {
+.social__item:hover {
   transition: background-color 200ms linear;
   background-color: #f38181;
 }
-.social-icon-item:hover svg {
+.social__item:hover .social__link--svg {
   fill: #fff;
 }
 
-.team-list h3 {
+.team__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -343,7 +342,7 @@
   padding: 0;
   margin-bottom: 14px;
 }
-.team-list p {
+.team__subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -354,33 +353,33 @@
 }
 
 /* FOOTER */
-.footer-box {
+.footer {
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: solid 1px #e5e5e5;
 }
-.footer-text {
+.footer__text {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #333333;
 }
-.footer-text span {
+.footer__tex--span {
   color: #f38181;
 }
-.input-text {
+.footer__input {
   display: flex;
 }
 
-.input-text input {
+.footer__input--tetx {
   width: 230px;
   height: 40px;
   border: solid 1px #e5e5e5;
   margin: 0;
 }
-.input-text input::placeholder {
+.footer__input--tetx::placeholder {
   font-size: 15px;
   color: #cccccc;
   font-family: "Roboto", sans-serif;
@@ -389,7 +388,7 @@
   font-style: italic;
 }
 
-.input-text button {
+.footer__button {
   display: block;
   width: 150px;
   height: 40px;
