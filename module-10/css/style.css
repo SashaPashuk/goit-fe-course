@@ -1,6 +1,9 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .container {
@@ -23,6 +26,18 @@
   display: block;
   width: 100%;
   height: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(243, 129, 129, 0.8)),
+    color-stop(50%, rgba(252, 227, 138, 0.8))
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(243, 129, 129, 0.8),
+    rgba(252, 227, 138, 0.8) 50%
+  );
   background: linear-gradient(
     to bottom,
     rgba(243, 129, 129, 0.8),
@@ -32,10 +47,15 @@
 
 .page-header__menu {
   min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
-  margin-top: 30px;
   margin-bottom: 190px;
 }
 
@@ -48,7 +68,11 @@
 }
 
 .page-header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   min-width: 490px;
   list-style: none;
@@ -59,6 +83,8 @@
   font-size: 14px;
   text-decoration: none;
   position: relative;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
   text-transform: uppercase;
 }
@@ -78,6 +104,8 @@
 }
 
 .page-header__item:hover {
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
   color: rgb(252, 227, 138);
 }
@@ -165,8 +193,12 @@
 }
 
 .services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   list-style: none;
   max-width: 1180px;
@@ -249,7 +281,11 @@
 
 .team__list {
   min-height: 545px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   list-style: none;
 }
@@ -268,9 +304,18 @@
   height: 470px;
 }
 .team__box-hover:hover .team__wrap-hover {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
+  -webkit-box-shadow: 10px 10px 0 #95e1d3;
   box-shadow: 10px 10px 0 #95e1d3;
+  -webkit-transition: -webkit-box-shadow 0.2s linear,
+    -webkit-transform 200ms linear;
+  transition: -webkit-box-shadow 0.2s linear, -webkit-transform 200ms linear;
+  -o-transition: box-shadow 0.2s linear, transform 200ms linear;
   transition: box-shadow 0.2s linear, transform 200ms linear;
+  transition: box-shadow 0.2s linear, transform 200ms linear,
+    -webkit-box-shadow 0.2s linear, -webkit-transform 200ms linear;
 }
 
 .team__inner-hover {
@@ -282,6 +327,18 @@
   height: 470px;
 }
 .team__box-hover:hover .team__inner-hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(243, 129, 129, 0.8)),
+    color-stop(50%, rgba(252, 227, 138, 0.8))
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(243, 129, 129, 0.8),
+    rgba(252, 227, 138, 0.8) 50%
+  );
   background: linear-gradient(
     to bottom,
     rgba(243, 129, 129, 0.8),
@@ -292,10 +349,14 @@
 
 .social__list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   visibility: hidden;
 }
@@ -308,11 +369,19 @@
   background-color: #fce38a;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
 .social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 55px;
   height: 55px;
@@ -326,6 +395,8 @@
 }
 
 .social__item:hover {
+  -webkit-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
   background-color: #f38181;
 }
@@ -355,8 +426,14 @@
 /* FOOTER */
 .footer {
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-top: solid 1px #e5e5e5;
 }
@@ -370,6 +447,8 @@
   color: #f38181;
 }
 .footer__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -378,6 +457,38 @@
   height: 40px;
   border: solid 1px #e5e5e5;
   margin: 0;
+}
+.footer__input--tetx::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #cccccc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-left: 10px;
+  font-style: italic;
+}
+.footer__input--tetx::-moz-placeholder {
+  font-size: 15px;
+  color: #cccccc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-left: 10px;
+  font-style: italic;
+}
+.footer__input--tetx:-ms-input-placeholder {
+  font-size: 15px;
+  color: #cccccc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-left: 10px;
+  font-style: italic;
+}
+.footer__input--tetx::-ms-input-placeholder {
+  font-size: 15px;
+  color: #cccccc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-left: 10px;
+  font-style: italic;
 }
 .footer__input--tetx::placeholder {
   font-size: 15px;
@@ -401,7 +512,10 @@
 }
 
 /* MEDIA */
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .page-header__item--btn {
     background-image: url(../img/menu-icon/icon1@2x.png);
   }
