@@ -78,7 +78,7 @@
   list-style: none;
 }
 
-.page-header__item {
+.page-header__link {
   color: #ffffff;
   font-size: 14px;
   text-decoration: none;
@@ -103,13 +103,13 @@
   background-image: url(../img/menu-icon/icon2.png);
 }
 
-.page-header__item:hover {
+.page-header__link:hover {
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
   color: rgb(252, 227, 138);
 }
-.page-header__item:hover:after {
+.page-header__link:hover:after {
   position: absolute;
   top: 26px;
   left: 0px;
@@ -155,7 +155,7 @@
 }
 
 /* MAIN */
-.subtitle {
+.section__subtitle {
   display: block;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
@@ -164,10 +164,10 @@
   text-transform: lowercase;
   padding-bottom: 10px;
 }
-.subtitle::first-letter {
+.section__subtitle::first-letter {
   text-transform: uppercase;
 }
-.title {
+.section__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -176,7 +176,7 @@
   text-transform: uppercase;
   margin-bottom: 110px;
 }
-.title:after {
+.section__title:after {
   display: block;
   content: "";
   width: 60px;
