@@ -1,0 +1,18 @@
+.social__item {
+    margin-right: 1px;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    &:hover {
+        -webkit-transition: background-color 200ms linear;
+        -o-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+        background-color: #f38181;
+      }
+    &:hover .social__link--svg {
+        fill: #fff;
+      }  
+  }

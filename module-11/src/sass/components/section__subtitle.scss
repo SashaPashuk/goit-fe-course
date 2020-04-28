@@ -1,0 +1,12 @@
+.section__subtitle {
+    display: block;
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: lowercase;
+    padding-bottom: 10px;
+    &::first-letter {
+        text-transform: uppercase;
+      }
+  }

@@ -1,0 +1,25 @@
+.footer {
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: solid 1px #e5e5e5;
+  }
+
+  .footer__button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #95e1d3;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+  }

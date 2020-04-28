@@ -1,0 +1,30 @@
+.page-header__link {
+  color: #ffffff;
+  font-size: 14px;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  text-transform: uppercase;
+  &:hover:after {
+    position: absolute;
+    top: 26px;
+    left: 0px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(252, 227, 138);
+    transition: color 0.2s linear;
+    color: rgb(252, 227, 138);
+    -webkit-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+    color: rgb(252, 227, 138);
+    -webkit-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+    color: rgb(252, 227, 138);
+  }
+}

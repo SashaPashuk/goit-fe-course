@@ -1,0 +1,43 @@
+.services__item {
+    position: relative;
+    max-width: 300px;
+    min-height: 70px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: -80px;
+        content: "";
+        display: block;
+        height: 35px;
+        width: 80px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    &:nth-child(n + 3) {
+        margin-bottom: 0;
+      }  
+  }
+
+  .services__item--icon1::before {
+    background-image: url(../../images/services/icon1.png);
+  }
+  .services__item--icon2::before {
+    background-image: url(../../images/services/icon2.png);
+  }
+  .services__item--icon3::before {
+    background-image: url(../../images/services/icon3.png);
+  }
+  .services__item--icon4::before {
+    background-image: url(../../images/services/icon4.png);
+  }
+  .services__item--icon5::before {
+    background-image: url(../../images/services/icon5.png);
+  }
+  .services__item--icon6::before {
+    background-image: url(../../images/services/icon6.png);
+  }
+  
+  

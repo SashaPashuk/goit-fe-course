@@ -1,10 +1,46 @@
-/*
- * Все паршалы импортировать в этот файл
- */
-
+@import './variables/variables';
 @import 'normalize.scss';
 @import 'base.scss';
- body {
-     color: red;
-     background-color: teal;
- }
+
+@import './components/link';
+@import './components/list';
+@import './components/container.scss';
+@import './components/page-header';
+@import './components/page-header__baner';
+@import './components/page-header__menu';
+@import './components/page-header__logo';
+@import './components/page-header__nav';
+@import './components/page-header__link';
+@import './components/page-header__item--btn';
+@import './components/page-header__title';
+@import './components/page-header__subtitle';
+@import './components/page-header__button';
+// main
+@import './components/section__subtitle.scss';
+@import './components/section__title.scss';
+// SERVICES 
+@import './components/services.scss';
+@import './components/services__list.scss';
+@import './components/services__item.scss';
+@import './components/services__text.scss';
+@import './components/services__title.scss';
+// team
+@import './components/team.scss';
+@import './components/team__text.scss';
+@import './components/team__list.scss';
+@import './components/social__list.scss';
+@import './components/social__item.scss';
+@import './components/team__box-hover.scss';
+@import './components/team__wrap-hover.scss';
+@import './components/team__inner-hover.scss';
+@import './components/social__list.scss';
+@import './components/social__item.scss';
+@import './components/social__link.scss';
+@import './components/social__link--svg.scss';
+@import './components/team__title.scss';
+@import './components/team__subtitle.scss';
+// footer
+@import './components/footer.scss';
+@import './components/footer__text';
+@import './components/footer__text';
+@import './components/footer__input';
