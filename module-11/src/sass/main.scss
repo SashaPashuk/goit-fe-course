@@ -4,5 +4,7 @@
 
 @import 'normalize.scss';
 @import 'base.scss';
-
-@import './helpers/style'
+ body {
+     color: red;
+     background-color: teal;
+ }
