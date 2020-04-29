@@ -1,7 +1,7 @@
 .page-header__title {
     font-size: 72px;
-    color: #ffffff;
-    font-family: "Kaushan Script", cursive;
+    color: $header-color-font;
+    font-family: $secondary-font-stack;
     font-weight: 400;
     margin-bottom: 50px;
   }

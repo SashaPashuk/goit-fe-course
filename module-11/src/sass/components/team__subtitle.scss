@@ -1,9 +1,9 @@
 .team__subtitle {
-    font-family: "Roboto", sans-serif;
+    font-family: $auxiliary-font-stack;
     font-weight: 300;
     font-size: 15px;
     text-align: center;
-    color: #999999;
+    color: $secondary-color-font;
     margin: 0;
     padding: 0;
   }
